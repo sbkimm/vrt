@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "storybook:build": "build-storybook",
+    "storybook:build": "storybook build",
     "storybook:serve": "npx http-server storybook-static -a localhost -p 6006 -s",
     "vrt:snapshot": "storycap --serverCmd \"npx http-server storybook-static -a localhost -p 6006\" http://localhost:6006",
     "vrt:expected": "rimraf .reg/expected && mv __screenshots__ .reg/expected",
